@@ -1,48 +1,59 @@
 # Geo API
 
-Geo API is a Spring Boot application that provides geographical data services. It uses MySQL for data storage and supports asynchronous processing and support basic authentication
+Geo API is a Spring Boot application that provides geographical data services. It integrates with MySQL for data storage, supports asynchronous processing, and includes basic authentication.
 
 ## Features
 
-- Basic user authentication
-- RESTful API endpoints with JSON data format
-- MySQL database integration
-- File upload handling
-- Asynchronous processing
-- Export and import using Apache POI for parsing
+- **Basic Authentication** – Secure API access with user authentication.  
+- **RESTful API** – Provides JSON-formatted data.  
+- **MySQL Integration** – Uses MySQL as the database.  
+- **File Upload Handling** – Supports file processing.  
+- **Asynchronous Processing** – Improves performance with background tasks.  
+- **Data Export & Import** – Uses Apache POI for Excel file parsing.  
 
-## Tech Stack Used
+## Tech Stack
 
-- Java 17
-- Spring Boot
-- Hibernate
-- Spring Data
-- Gradle
-- MySQL
-- Apache POI
+- **Java 17**  
+- **Spring Boot**  
+- **Hibernate & Spring Data**  
+- **Gradle**  
+- **MySQL**  
+- **Apache POI**  
 
 ## Requirements
 
-- Java 17
-- Gradle
-- MySQL
+- Java 17  
+- Gradle  
+- MySQL  
 
 ## Getting Started
 
-### Clone the repository
+### 1. Clone the Repository  
 
 ```bash
 git clone https://github.com/yourusername/geo-api.git
 cd geo-api
+```
 
-### Configure the database
+### 2. Configure the Database  
+
+Update `application.properties` with your database credentials:  
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/geo-db?useSSL=false&serverTimezone=UTC
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
+```
 
-### Build and run the application
+### 3. Build and Run the Application  
+
+```bash
 ./gradlew build
 ./gradlew bootRun
+```
 
-[↑ Back to top](#top)
+---
+
+[↑ Back to top](#geo-api)
+
 
