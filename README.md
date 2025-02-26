@@ -35,5 +35,14 @@ Geo API is a Spring Boot application that provides geographical data services. I
 git clone https://github.com/yourusername/geo-api.git
 cd geo-api
 
+### Configure the database
+spring.datasource.url=jdbc:mysql://localhost:3306/geo-db?useSSL=false&serverTimezone=UTC
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+
+### Build and run the application
+./gradlew build
+./gradlew bootRun
+
 [↑ Back to top](#top)
 
