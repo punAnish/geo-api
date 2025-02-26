@@ -35,3 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
+# Ignore application properties if they contain sensitive information
+src/main/resources/application.properties
